@@ -43,7 +43,7 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-sync": "^0.1.4",
     "gulp-template": "^4.0.0",
-    "gulp-uglify": "^1.5.4",
+    "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.7",
     "gulp.spritesmith": "^6.2.1",
     "jshint": "^2.9.2",
@@ -52,7 +52,7 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0",
-    "yargs": "^4.8.0"
+    "yargs": "^5.0.0"
   },
   "dependencies": {
     "jquery": "^3.1.0",
