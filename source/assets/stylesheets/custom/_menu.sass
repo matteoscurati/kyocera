@@ -1,0 +1,33 @@
+.menu
+  color: $white
+
+.menu__body
+  display: table
+  width: 100%
+  text-align: center
+
+.menu__body__inner
+  +vertical-padding(0.7)
+  +font-size(delta)
+  +heading-font-family
+  text-transform: uppercase
+
+  a
+    text-decoration: none
+    color: $white
+
+.menu__nav
+  +horizontal-padding(0.5)
+
+  &:hover
+    text-decoration: underline
+
+.menu__lap
+  display: none
+
++at-breakpoint(lap)
+  .menu__lap
+    display: block
+
+  .menu__tab
+    display: none
