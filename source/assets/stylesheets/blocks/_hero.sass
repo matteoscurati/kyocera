@@ -3,6 +3,8 @@
   background-position: center center
   background-color: $light-bg-color
   background-size: cover
+  background: image-url('hero.jpg') no-repeat center center
+  background-size: cover
   position: relative
 
 .hero__body
@@ -13,7 +15,8 @@
 .hero__body__inner
   display: table-cell
   vertical-align: middle
-  +vertical-padding(4)
+  +vertical-padding(6)
+  color: $white
 
 .hero__heading
   +heading-font-family
@@ -42,7 +45,10 @@
   .hero__text a
     color: white
 
++at-breakpoint(lap)
+  .hero__heading
+    +font-size(mega)
+
 +at-breakpoint(desk)
   .hero__heading
-    +font-size(40px)
-
+    +font-size(iper)
