@@ -22,12 +22,28 @@
   &:hover
     text-decoration: underline
 
+.menu__tab
+  cursor: pointer
+
 .menu__lap
   display: none
+
+.menu__mobile
+  +margin-top(1)
+  display: none
+
+  &.is-open
+    display: block
+
+.menu__mobile__item
+  +vertical-padding(1)
 
 +at-breakpoint(lap)
   .menu__lap
     display: block
 
   .menu__tab
+    display: none
+
+  .menu__mobile
     display: none
