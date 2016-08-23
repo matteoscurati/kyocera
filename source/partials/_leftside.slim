@@ -1,6 +1,12 @@
 .wrap
   .grid--middle
     .grid__item.width-12-12.lap-6-12
-      p = lorem.sentences 6
+      - data.sections.groups.each do |section|
+        - case section.section
+        - when "First"
+          h2 = section.subtitle
+          h1 = section.title
+          p = section.content
+          p &agrave; &egrave;
     .grid__item.width-12-12.lap-6-12
       p = lorem.sentences 6
