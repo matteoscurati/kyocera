@@ -1,0 +1,15 @@
+.wrap
+  = link_to "#" do
+    .articles
+      .grid
+        .grid__item.lap-6-12.width-12-12
+          .articles__image style="background: url('/dist/images/ex0.jpg') no-repeat center center; background-size: cover;"
+        .grid__item.lap-6-12.width-12-12
+          .articles__body
+            .articles__inner
+              .articles__heading
+                h1 = lorem.words 4
+                h2 = lorem.words 7
+              .articles__text
+                .formatted-content
+                  p =  lorem.sentences 4

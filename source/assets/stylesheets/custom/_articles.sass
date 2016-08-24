@@ -1,0 +1,28 @@
+.articles
+  +margin-top(5)
+
+  &:hover
+    .articles__image
+      opacity: .6
+
+.articles__heading
+
+  h1
+    +heading-font-family
+    +font-size(gamma)
+    text-transform: uppercase
+
+  h2
+    +subtitle-font-family
+    +font-size(delta)
+    color: red
+    text-transform: uppercase
+
+.articles__text
+  +padding-top(2)
+
+.articles__image
+  width: 100%
+  +vertical-padding(10)
+  +margin-bottom(1)
+  transition: all 0.5s ease-in-out
