@@ -2,7 +2,8 @@
   +heading-font-family
   padding: 0.7em 1em
   text-decoration: none
-  border: 2px solid $base-body-color
+  text-transform: uppercase
+  min-width: 40%
   display: inline-block
   vertical-align: middle
   white-space: nowrap
@@ -17,6 +18,10 @@
   transition: box-shadow 0.1s $material-ease, transform 0.1s $material-ease, text-shadow 0.1s $material-ease
   font-size: 1.1em
   box-shadow: 0 0 0 rgba(black, 0.2)
+
+  &:before
+    content: "\25b8"
+    +margin-right(0.5)
 
   .no-touch &:hover
     box-shadow: 0 3px 5px rgba(black, 0.2)
@@ -44,6 +49,17 @@
   @extend .button
   font-size: 1.1em
 
+  &.is-red
+    border: 1px solid $light-grey
+    color: $red
+    background-color: $light-grey
+
+  &.is-white
+    border: 1px solid $red
+    color: $white
+    background-color: $red
+
+
 .button--huge
   @extend .button
   font-size: 1.3em
@@ -60,7 +76,7 @@
   @extend .button
 
 .button--primary
-  color: $primary-color
+  color: $red
   border-color: $primary-color
 
 .button--notice

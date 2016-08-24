@@ -2,6 +2,7 @@
   .wrap
     .grid--middle
       .grid__item.width-12-12.lap-6-12
-        p = lorem.sentences 6
+        .home-heading__image
+          = image_tag section.image
       .grid__item.width-12-12.lap-6-12
-        p = lorem.sentences 6
+        = partial "partials/home-heading", locals: { section: section }

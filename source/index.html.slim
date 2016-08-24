@@ -1,4 +1,8 @@
 = partial "partials/logo"
 = partial "partials/hero"
-= partial "partials/leftside"
-= partial "partials/rightside"
+- data.sections.groups.each do |section|
+  - case section.section
+  - when "First"
+    = partial "partials/leftside", locals: { section: section }
+  - when "Second"
+    = partial "partials/rightside", locals: { section: section }
