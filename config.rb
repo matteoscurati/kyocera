@@ -14,9 +14,12 @@ page '/*.txt', layout: false
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
-#  which_fake_page: "Rendering a fake page with a local variable" }
+all_articles = data.articles
+
+all_articles.article.each do |article|
+  proxy "/articoli/#{article.slug}", "/templates/details.html", ignore: true, locals: { article: article }
+end
+
 
 # Localization
 # activate :i18n
