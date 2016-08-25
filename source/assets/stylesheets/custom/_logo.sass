@@ -2,8 +2,20 @@
   margin-top: 50px
   background-color: $white
   text-align: center
-  +vertical-padding(1.5)
+  +position(fixed)
+  top: 0
+  left: 0
+  width: 100%
+  border-bottom: 1px solid $light-grey
+  z-index: 5
 
   img
-    height: 4rem
+    height: 65px
     max-width: 350px
+    transition: height .3s
+    padding-top: 5px
+    padding-bottom: 5px
+
+  &.is-smaller
+    img
+      height: 50px
