@@ -14,10 +14,12 @@ page '/*.txt', layout: false
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
+proxy "/index.html", "/templates/index.html", ignore: true
+
 all_articles = data.articles
 
 all_articles.article.each do |article|
-  proxy "/articoli/#{article.slug}", "/templates/details.html", ignore: true, locals: { article: article }
+  proxy "/articoli/#{article.slug}.html", "/templates/detail.html", ignore: true, locals: { article: article }
 end
 
 
