@@ -1,14 +1,30 @@
 import $ from 'jQuery';
 import classie from 'desandro-classie';
 import smoothScroll from 'smooth-scroll';
+import typed from 'typed.js'
 
 require('jquery-ui');
 require('modernizr');
+require('wow');
 
 $(document).ready(() => {
   smoothScroll.init({
       offset: 100
     });
+});
+
+$(document).ready(() => {
+  new WOW().init();
+  const wow = new WOW({});
+});
+
+$(document).ready(() => {
+  $("#typed").typed({
+    strings: ["first sentence", "second sentence", "third sentence"],
+    showCursor: false,
+    backSpeed: 0,
+    backDelay: 500
+  });
 });
 
 $(document).ready(() => {
