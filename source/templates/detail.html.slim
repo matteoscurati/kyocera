@@ -5,8 +5,11 @@
   .article.wow.fadeInUpBig data-wow-delay="0.5s"
     .article__heading
       h1 = article.title
-      h2 = article.subtitle
+      - if article.subtitle
+        h2 = article.subtitle
       hr
+    .article__excerpt
+      p = article.excerpt
     .formatted-content
       p = article.content
     hr.article__line

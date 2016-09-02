@@ -2,13 +2,15 @@
   .home-heading__body
     .home-heading__inner
       .home-heading__heading
-        h2 = section.subtitle
-        h1 = section.title
+        - if article.subtitle
+          h2 = article.subtitle
+        h1 = article.title
         hr
+      .home-heading__excerpt
+        p = article.excerpt
       .home-heading__text
         .formatted-content
-          = section.content
+          p = truncate_words(Sanitize.fragment(article.content), length: 150)
       .home-heading__actions
-        = link_to section.link do
-          button.button--large class="#{section.classe}"
-            = section.button
+        = link_to "articoli/#{article.slug}.html" do
+          button.button--large class="#{article.classe}" Leggi tutto

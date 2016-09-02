@@ -1,16 +1,11 @@
 = partial "partials/logo"
 = partial "partials/hero"
-- data.articles.article.each do |art|
-  h1 = art.title
-  h2 = art.excerpt
-  h3 = art.slug
-  = art.content
+- first_article = data.articles.article[0]
+= partial "partials/leftside", locals: { article: first_article }
 - data.sections.groups.each do |section|
   - case section.section
-  - when "First"
-    = partial "partials/leftside", locals: { section: section }
   - when "Second"
-    = partial "partials/rightside", locals: { section: section }
+    = partial "partials/rightside", locals: { article: section }
 = partial "partials/one"
 = partial "partials/two"
 = partial "partials/three"

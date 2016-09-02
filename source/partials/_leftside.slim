@@ -1,7 +1,7 @@
 .wrap
   .grid--middle
     .grid__item.width-12-12.lap-6-12.wow.fadeInDown
-      = partial "partials/home-heading", locals: { section: section }
+      = partial "partials/home-heading", locals: { article: article }
     .grid__item.width-12-12.lap-6-12.wow.fadeIn data-wow-delay="0.5s"
       .home-heading__image
-        = image_tag section.image
+        = image_tag article.image
