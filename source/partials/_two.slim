@@ -1,26 +1,18 @@
 .wrap
   .grid
-    .grid__item.lap-6-12.width-12-12
-      = link_to "#" do
-        .articles
-          .articles__image.wow.fadeIn style="background: url('/dist/images/ex1.jpg') no-repeat center center; background-size: cover;"
-          .articles__body.wow.fadeIn data-wow-delay="0.3s"
-            .articles__inner
-              .articles__heading
-                h1 = lorem.words 4
-                h2 = lorem.words 7
-              .articles__text
-                .formatted-content
-                  p =  lorem.sentences 4
-    .grid__item.lap-6-12.width-12-12
-      = link_to "#" do
-        .articles
-          .articles__image.wow.fadeIn style="background: url('/dist/images/ex2.jpg') no-repeat center center; background-size: cover;"
-          .articles__body.wow.fadeIn data-wow-delay="0.3s"
-            .articles__inner
-              .articles__heading
-                h1 = lorem.words 4
-                h2 = lorem.words 7
-              .articles__text
-                .formatted-content
-                  p =  lorem.sentences 4
+    - articles.each do |article|
+      .grid__item.lap-6-12.width-12-12
+        = link_to "articoli/#{article.slug}.html" do
+          .articles
+            .articles__image.wow.fadeIn style="background: url('/dist/images/#{article.image}') no-repeat center center; background-size: cover;"
+            .articles__body.wow.fadeIn data-wow-delay="0.3s"
+              .articles__inner
+                .articles__heading
+                  h1 = article.title
+                  - if article.subtitle
+                    h2 = article.subtitle
+                .articles__excerpt
+                  p = article.excerpt
+                .articles__text
+                  .formatted-content
+                    p =  lorem.sentences 4
