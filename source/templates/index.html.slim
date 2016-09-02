@@ -1,5 +1,10 @@
 = partial "partials/logo"
 = partial "partials/hero"
+- data.articles.article.each do |art|
+  h1 = art.title
+  h2 = art.excerpt
+  h3 = art.slug
+  = art.content
 - data.sections.groups.each do |section|
   - case section.section
   - when "First"
