@@ -12,7 +12,7 @@
         .formatted-content
           p = truncate_words(Sanitize.fragment(article.content), length: 150)
       .home-heading__actions
-        = link_to "articoli/#{article.slug}.html" do
+        = link_to article.slug do
           button.button--large class="#{article.classe}"
             - if article.button
               = article.button

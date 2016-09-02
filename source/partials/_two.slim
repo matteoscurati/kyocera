@@ -15,4 +15,4 @@
                   p = article.excerpt
                 .articles__text
                   .formatted-content
-                    p =  lorem.sentences 4
+                    = truncate_words(Sanitize.fragment(article.content), length: 80)
