@@ -1,19 +1,9 @@
 ---
 groups:
-  - section: "First"
-    title: "This is very long a title"
-    subtitle: "And this is a subtile"
-    content: "<p>&agrave; &egrave; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est <strong>laborum.</strong></p>
-    <p>&igrave; &agrave; &egrave; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est <strong>laborum.</strong></p>"
-    button: "Lorem ipsum"
-    link: "#"
-    image: "first.png"
-    classe: "is-red"
-  - section: "Second"
-    title: "This is a title"
-    subtitle: "And this is a subtile"
-    content: "&igrave; &agrave; &egrave; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est <strong>laborum.</strong>"
-    button: "Another button"
+  - title: "DALLA CUSTOMER SATISFACTION AI SOLUTION PROVIDER"
+    subtitle: "La spinta tecnologica"
+    content: "<p>Il cliente al centro: &egrave; la customer experience, secondo una ricerca di Forrester Consulting per Accenture, il punto centrale della trasformazione digitale in atto nelle aziende, perch&eacute; consente di acquisire e mantenere i clienti nel tempo. per le imprese, per&ograve;, nonostante il progresso in questo senso sia continuo, la strada da percorrere &egrave; ancora lunga: la padronanza delle infrastrutture digitali non &egrave; infatti un obiettivo alla portata di tutti. Ecco perch&eacute; spesso la spinta alla trasformnazione digitale &egrave; data da partner e solution provider che mettono le proprie risorse e competenze a disposizione delle aziende.</p>"
     link: "#"
     image: "second.png"
     classe: "is-white"
+    button: "Vai al documento"

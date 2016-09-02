@@ -13,4 +13,8 @@
           p = truncate_words(Sanitize.fragment(article.content), length: 150)
       .home-heading__actions
         = link_to "articoli/#{article.slug}.html" do
-          button.button--large class="#{article.classe}" Leggi tutto
+          button.button--large class="#{article.classe}"
+            - if article.button
+              = article.button
+            - else
+              | Leggi tutto

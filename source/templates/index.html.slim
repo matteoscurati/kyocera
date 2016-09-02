@@ -3,9 +3,7 @@
 - first_article = data.articles.article[0]
 = partial "partials/leftside", locals: { article: first_article }
 - data.sections.groups.each do |section|
-  - case section.section
-  - when "Second"
-    = partial "partials/rightside", locals: { article: section }
+  = partial "partials/rightside", locals: { article: section }
 - second_articles = data.articles.article[1..2]
 = partial "partials/two", locals: { articles: second_articles }
 - third_articles = data.articles.article[3..4]
