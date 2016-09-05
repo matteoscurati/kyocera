@@ -1,0 +1,21 @@
+= partial "partials/logo"
+= partial "partials/spinta-hero"
+.wrap
+  .spinta
+    .formatted-content
+      h2 Riepilogo del sondaggio sui dirigenti
+      = data.spinta.txt_1
+      .spinta__highlight
+        = data.spinta.high_1
+      = data.spinta.txt_2
+      h3 Risultati principali
+      = data.spinta.txt_3
+      = partial "shared/spinta-list", locals: { title: data.spinta.tit_1, text: data.spinta.list_1 }
+      = partial "shared/spinta-list", locals: { title: data.spinta.tit_2, text: data.spinta.list_2 }
+      = partial "shared/spinta-list", locals: { title: data.spinta.tit_3, text: data.spinta.list_3 }
+      = partial "shared/spinta-quote", locals: { title: data.spinta.quote_1, label: data.spinta.lab_1 }
+      h2 La customer experience &egrave; il punto centrale della trasformazione digitale
+      = data.spinta.txt_4
+      = partial "shared/spinta-list", locals: { title: data.spinta.tit_4, text: data.spinta.list_4 }
+      = partial "shared/spinta-list", locals: { title: data.spinta.tit_5, text: data.spinta.list_5 }
+      = partial "shared/spinta-list", locals: { title: data.spinta.tit_6, text: data.spinta.list_6 }

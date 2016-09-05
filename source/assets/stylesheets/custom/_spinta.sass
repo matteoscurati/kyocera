@@ -1,0 +1,126 @@
+.spinta__hero
+  @extend .hero
+  background: none
+
+.spinta__hero__body
+  @extend .hero__body
+
+.spinta__hero__body__inner
+  @extend .hero__body__inner
+  margin-right: auto
+  margin-left: auto
+  +padding-bottom(4)
+
+.spinta__hero__heading
+  @extend .hero__heading
+  color: $black
+  background-color: $azure
+  width: 100%
+  +padding(1.5)
+  text-align: left
+  margin-left: none
+  margin-right: none
+  color: $white
+  +font-size(mega)
+  box-shadow: 20px 20px $light-azure
+
+  +at-breakpoint(lap)
+    width: 100%
+    box-shadow: 50px 50px $light-azure
+
+  &:after
+    content: ""
+    display: block
+    padding-bottom: 50%
+
+.spinta__hero__actions
+  @extend .hero__actions
+
+.spinta__hero__text
+  @extend .hero__text
+  color: $black
+  +font-size(epsilon)
+  +horizontal-padding(10)
+  +margin-top(6)
+
+  a
+    text-decoration: underline
+
+.spinta
+  max-width: 800px
+  margin-left: auto
+  margin-right: auto
+
+  >.formatted-content
+
+    h2
+      +font-size(alpha)
+      text-transform: uppercase
+      color: $azure
+
+    h3
+      +font-size(gamma)
+      text-transform: uppercase
+      color: $dark-grey
+
+.spinta__highlight
+  background-color: $azure
+  color: $white
+  text-align: center
+  +heading-font-family
+  +font-size(delta)
+  line-height: 1.2
+  text-transform: uppercase
+  +padding(2)
+  width: 60%
+  margin-left: auto
+  margin-right: auto
+  +vertical-margin(3)
+
+.spinta__expandable
+  transition: all 0.35s ease-in-out
+  color: $azure
+
+  &::before
+    content: "\276F"
+
+.spinta__expandable:hover::before
+  transform: rotate(-90deg)
+
+.spinta__strong
+  font-weight: 700
+
+.spinta__list
+  cursor: pointer
+  +padding-top(1.5)
+
+  &:hover
+
+    .spinta__expandable
+      opacity: 0.6
+
+    .spinta__strong
+      text-decoration: underline
+
+.spinta__quote
+
+  hr
+    margin-right: auto
+    margin-left: auto
+    width: 60%
+    color: $light-azure
+    +vertical-margin(4)
+
+.spinta__quote__text
+  color: $dark-grey
+  text-align: center
+  line-height: 1.2
+  font-style: italic
+  +font-size(mega)
+  +quote-font-family
+
+.spinta__quote__label
+  text-align: center
+  color: $dark-grey
+  +font-size(eta)
+  +margin-top(1)

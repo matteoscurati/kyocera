@@ -1,4 +1,5 @@
 import $ from 'jQuery';
+import Chart from 'chart.js'
 import classie from 'desandro-classie';
 import smoothScroll from 'smooth-scroll';
 import typed from 'typed.js'
@@ -61,3 +62,13 @@ function init() {
 }
 
 window.onload = init();
+
+$(document).ready(function() {
+  $('.spinta__answer').hide();
+  $('.spinta__list').click(function() {
+    let answer = $(this).closest(".spinta__list").find(".spinta__answer");
+    answer.toggle(function() {
+      answer;
+    });
+  });
+});
