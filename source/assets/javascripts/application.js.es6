@@ -1,5 +1,5 @@
 import $ from 'jQuery';
-import Chart from 'chart.js'
+//import Chart from 'chart.js'
 import classie from 'desandro-classie';
 import smoothScroll from 'smooth-scroll';
 import typed from 'typed.js'
