@@ -63,6 +63,15 @@
       text-transform: uppercase
       color: $dark-grey
 
+    p
+
+      a
+        text-decoration: underline
+        color: $azure
+
+  &.is-azure
+    +vertical-padding(3)
+
 .spinta__highlight
   background-color: $azure
   color: $white
@@ -76,6 +85,18 @@
   margin-left: auto
   margin-right: auto
   +vertical-margin(3)
+
+.spinta__figure
+  @extend .spinta__highlight
+  background-color: $light-azure
+  color: $dark-grey
+  text-align: left
+  +margin-top(7)
+
+.spinta__figure__text
+  +body-font-family
+  text-transform: none
+  +font-size(eta)
 
 .spinta__expandable
   transition: all 0.35s ease-in-out
@@ -124,3 +145,34 @@
   color: $dark-grey
   +font-size(eta)
   +margin-top(1)
+
+.spinta__figure__label
+  text-align: center
+  width: 80%
+  margin-right: auto
+  margin-left: auto
+  +heading-font-family
+  +font-size(delta)
+
+.spinta__figure__img
+  +vertical-margin(1)
+  text-align: center
+
+.spinta__figure__note
+  width: 80%
+  margin-left: auto
+  margin-right: auto
+  +font-size(smallprint)
+  +margin-bottom(7)
+
+  +at-breakpoint(lap)
+    width: 70%
+
+  +at-breakpoint(desk)
+    width: 60%
+
+.spinta__notes
+  color: $azure
+  vertical-align: super
+  font-size: 0.8em
+  margin-left: 2px

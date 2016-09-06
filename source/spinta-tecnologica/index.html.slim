@@ -5,17 +5,58 @@
     .formatted-content
       h2 Riepilogo del sondaggio sui dirigenti
       = data.spinta.txt_1
-      .spinta__highlight
-        = data.spinta.high_1
+      .spinta__highlight = data.highlights.highlight[0].high
       = data.spinta.txt_2
       h3 Risultati principali
       = data.spinta.txt_3
-      = partial "shared/spinta-list", locals: { title: data.spinta.tit_1, text: data.spinta.list_1 }
-      = partial "shared/spinta-list", locals: { title: data.spinta.tit_2, text: data.spinta.list_2 }
-      = partial "shared/spinta-list", locals: { title: data.spinta.tit_3, text: data.spinta.list_3 }
-      = partial "shared/spinta-quote", locals: { title: data.spinta.quote_1, label: data.spinta.lab_1 }
+      = partial "shared/spinta-list", locals: { list: data.lists.list[0] }
+      = partial "shared/spinta-list", locals: { list: data.lists.list[1] }
+      = partial "shared/spinta-list", locals: { list: data.lists.list[2] }
+      = partial "shared/spinta-quote", locals: { quote: data.quotes.quote[0] }
       h2 La customer experience &egrave; il punto centrale della trasformazione digitale
       = data.spinta.txt_4
-      = partial "shared/spinta-list", locals: { title: data.spinta.tit_4, text: data.spinta.list_4 }
-      = partial "shared/spinta-list", locals: { title: data.spinta.tit_5, text: data.spinta.list_5 }
-      = partial "shared/spinta-list", locals: { title: data.spinta.tit_6, text: data.spinta.list_6 }
+      = partial "shared/spinta-list", locals: { list: data.lists.list[3] }
+      = partial "shared/spinta-list", locals: { list: data.lists.list[4] }
+      = partial "shared/spinta-list", locals: { list: data.lists.list[5] }
+      = partial "shared/figure", locals: { title: "Figura 1", figure: data.figures.figure[0] }
+      h2 Il cammino verso la trasformazione digitale &egrave; ancora lungo per le aziende
+      = data.spinta.txt_5
+      = partial "shared/figure", locals: { title: "Figura 2", figure: data.figures.figure[1] }
+      = partial "shared/spinta-list", locals: { list: data.lists.list[6] }
+      = partial "shared/figure", locals: { title: "Figura 3", figure: data.figures.figure[2] }
+      = partial "shared/spinta-list", locals: { list: data.lists.list[7] }
+      = partial "shared/spinta-list", locals: { list: data.lists.list[8] }
+      = partial "shared/figure", locals: { title: "Figura 4", figure: data.figures.figure[3] }
+      = partial "shared/spinta-list", locals: { list: data.lists.list[9] }
+      = partial "shared/spinta-list", locals: { list: data.lists.list[10] }
+      = partial "shared/figure", locals: { title: "Figura 5", figure: data.figures.figure[4] }
+      h2 Provider di soluzioni di terze parti colmano i divari e favoriscono la trasformazione
+      = data.spinta.txt_6
+      = partial "shared/spinta-list", locals: { list: data.lists.list[11] }
+      = partial "shared/figure", locals: { title: "Figura 6", figure: data.figures.figure[5] }
+      = partial "shared/spinta-list", locals: { list: data.lists.list[12] }
+      = partial "shared/figure", locals: { title: "Figura 7", figure: data.figures.figure[6] }
+      = partial "shared/spinta-list", locals: { list: data.lists.list[13] }
+      = partial "shared/spinta-quote", locals: { quote: data.quotes.quote[1] }
+      = partial "shared/figure", locals: { title: "Figura 8", figure: data.figures.figure[7] }
+.wrap.is-azure
+  .spinta.is-azure
+    .formatted-content
+      h2 Suggerimenti chiave
+      = data.spinta.txt_7
+      = partial "shared/spinta-list", locals: { list: data.lists.list[14] }
+      = partial "shared/spinta-list", locals: { list: data.lists.list[15] }
+      = partial "shared/spinta-list", locals: { list: data.lists.list[16] }
+      = partial "shared/spinta-list", locals: { list: data.lists.list[17] }
+.wrap.space--top-3
+  .spinta
+    .formatted-content
+      h2 Appendice A: Metodologia
+      = data.spinta.txt_8
+      h2 Appendice B: Materiale supplementare
+      h3 Ricerche Forrester correlate
+      = data.spinta.txt_9
+      h3 MATERIALE ACCENTURE CORRELATO
+      = data.spinta.txt_10
+      h2 Appendice C: Note conclusive
+      = data.spinta.txt_11

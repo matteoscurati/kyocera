@@ -4,6 +4,10 @@
   &.is-narrow
     max-width: 800px
 
+  &.is-azure
+    background-color: $light-azure
+    max-width: none
+
 @each $name in $breakpoint-names
   .wrap--on-#{$name}
     +at-breakpoint($name)
