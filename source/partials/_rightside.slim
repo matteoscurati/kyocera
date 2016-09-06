@@ -5,4 +5,4 @@
         .home-heading__image.wow.fadeIn data-wow-delay="0.5s"
           = image_tag article.image
       .grid__item.width-12-12.lap-6-12.wow.fadeInUp
-        = partial "partials/home-heading", locals: { article: article }
+        = partial "partials/home-heading", locals: { article: article, is_art: "false" }

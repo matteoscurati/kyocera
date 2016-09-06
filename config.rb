@@ -51,9 +51,30 @@ configure :build do
   activate :relative_assets
 end
 
+TRANSFORMS = [
+  ['à', '&agrave;'],
+  ['è', '&egrave;'],
+  ['ù', '&ugrave;'],
+  ['ò', '&ograve;'],
+  ['ì', '&igrave;'],
+  ['À', '&Agrave;'],
+  ['È', '&Egrave;'],
+  ['Ù', '&Ugrave;'],
+  ['Ò', '&Ograve;'],
+  ['Ì', '&Igrave;'],
+  ['°', '&deg;'],
+  ['«', '&laquo;'],
+  ['»', '&raquo;'],
+  ['É', '&Eacute;'],
+  ['é', '&eacute;']
+]
+
 #helpers
 helpers do
   def markdown(text)
     Tilt['markdown'].new { text }.render(scope=self)
+  end
+  def entity(text)
+    TRANSFORMS.each.with_object(text) { |(from, to), t| t = t.gsub!(from, to) }
   end
 end

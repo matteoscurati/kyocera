@@ -27,6 +27,10 @@ html
 
     = stylesheet_link_tag :application
     link rel="stylesheet" type="text/css" href="http://c2.res.24o.it/fonts/w-fonts.css?v1.0001"
+    script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'
+    = partial "partials/googletag"
+    = partial "partials/googletag-second"
+
   body
     = partial "partials/sole"
     = yield
