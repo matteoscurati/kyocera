@@ -30,6 +30,8 @@ end
 Slim::Engine.set_options format: :html
 Slim::Engine.set_options pretty: false
 
+set :relative_links, true
+
 # Assets
 set :css_dir, 'dist/stylesheets'
 set :js_dir, 'dist/javascripts'

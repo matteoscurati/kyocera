@@ -20,7 +20,7 @@
               - else
                 | Leggi tutto
         - else
-          = link_to "/#{article.slug}/" do
+          = link_to article.slug do
             button.button--large class="#{article.classe}"
               - if article.button
                 = article.button
